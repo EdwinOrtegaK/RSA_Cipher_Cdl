@@ -21,7 +21,7 @@ El archivo .pem contiene la información criptográfica codificada en texto para
 la public_key.pem logre ver que contiene un encabezado que indica que es una llave pública, seguido de un bloque de texto en Base64
 que es la clave en sí, y al final un pie que marca el final de la llave. No es legible totalmente pero entre ese bloque se encuentran los datos de la clave pública RSA.
 
-## Respuesta Parte 2
+## Respuesta Parte 3
 
 ¿Porqué cifrar el mismo mensaje dos veces produce resultados distintos? Demuéstrenlo y
 expliquen que propiedad de OAEP lo cause
