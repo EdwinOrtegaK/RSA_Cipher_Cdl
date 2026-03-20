@@ -21,3 +21,9 @@ El archivo .pem contiene la información criptográfica codificada en texto para
 la public_key.pem logre ver que contiene un encabezado que indica que es una llave pública, seguido de un bloque de texto en Base64
 que es la clave en sí, y al final un pie que marca el final de la llave. No es legible totalmente pero entre ese bloque se encuentran los datos de la clave pública RSA.
 
+## Respuesta Parte 2
+
+¿Porqué cifrar el mismo mensaje dos veces produce resultados distintos? Demuéstrenlo y
+expliquen que propiedad de OAEP lo cause
+
+Al cifrar el mismo mensaje dos veces con RSA-OAEP, se obtienen resultados distintos porque OAEP agrega aleatoriedad al proceso de cifrado. Esto hace que, aunque el mensaje y la clave pública sean los mismos, cada salida cifrada sea diferente, lo cual mejora la seguridad al evitar patrones repetidos.
