@@ -12,3 +12,12 @@ Además RSA es significativamente más lento en comparación con algoritmos sim�
 operaciones criptográficas involucran cálculos matemáticos complejos con números muy grandes. Otra limitación es que 
 RSA solo puede cifrar mensajes donde el tamaño sea menor al de la clave. Por esta razón, RSA no es adecuado para cifrar archivos o documentos grandes.
 
+## Respuesta Parte 2
+
+¿Qué información contiene un archivo .pem? Abre public_key.pem con un editor de texto y
+describe su estructura.
+
+El archivo .pem contiene la información criptográfica codificada en texto para que pueda ser leída y compartida fácilmente. Al abrir
+la public_key.pem logre ver que contiene un encabezado que indica que es una llave pública, seguido de un bloque de texto en Base64
+que es la clave en sí, y al final un pie que marca el final de la llave. No es legible totalmente pero entre ese bloque se encuentran los datos de la clave pública RSA.
+
